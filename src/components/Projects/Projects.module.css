@@ -1,0 +1,81 @@
+@import "../../vars.css";
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh; /* Ensures the container occupies the full height of the viewport */
+  color: var(--color-text);
+  background-color: #d0e3e9;
+  margin-top: 250px;
+  /* margin-bottom: 200px; */
+}
+
+.des{
+  width: 80%;
+  margin-left: 10%;
+  color: black;
+  font-size: 22px;
+  font-weight: 400; 
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative; /* Add this to position the pseudo-element */
+  margin-left: 140px;
+  margin-top: 100px; /* Adjust this value for spacing between the line and title */
+}
+
+.line {
+  width: 100%;
+  border-top: 1px solid var(--color-text); /* Adjust the color and thickness of the line */
+}
+
+.projects {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 10px;
+  width: 100%;
+  /* margin-left: 10%; */
+  justify-content: center;
+}
+
+.projects > div {
+  width: 300px; /* Fixed width for the project cards */
+  height: 370px; /* Fixed height for the project cards */
+  justify-content: space-between; /* Ensure the content is spaced evenly */
+  background-color: #b6bde6; /* Optional: background color for better visual separation */
+  padding: 15px; /* Optional: padding inside the project cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better depth */
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+@media screen and (max-width: 768px) {
+  .projects > div {
+    flex: 1 1 calc(50% - 15px); /* Take up 50% of the width minus the gap */
+    width: 120px; /* Fixed width for the project cards */
+    height: 360px;
+    /* margin-bottom: 100px; */
+  }
+  /* .gap{
+    height: 1000px;
+  } */
+  .title{
+    font-size: 30px;
+    margin-left: 50px;
+  }
+}

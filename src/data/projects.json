@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Food Blog",
+    "imageSrc": "projects/food_blog.png",
+    "description": "Developed a responsive food recipe website with dynamic slideshow and categorized pages for various items.",
+    "skills": ["Html", "CSS", "JavaScript"],
+    "demo": "https://html-project-c5s6.vercel.app/",
+    "source": "https://github.com/manikanta9275/html-project.git"
+  },
+  {
+    "title": "Java Banking System",
+    "imageSrc": "projects/Java_Banking_System.png",
+    "description": "Developed a banking system in Java with features like customer creation, transaction tracking, and account management.",
+    "skills": ["Java", "OOPs"],
+    "source": "https://github.com/manikanta9275/java-Banking-System"
+  },
+  {
+    "title": "Secure Voting System ",
+    "imageSrc": "projects/Secure_Voting_System.png",
+    "description": "Developed a Secure Voting System with real-time face recognition, administrative controls, and volunteer-led election management.",
+    "skills": ["Python", "Flask", "MySQL"],
+    "source": "https://github.com/manikanta9275/secure-face-voting"
+  },
+  {
+    "title": "Faculty Management System",
+    "imageSrc": "projects/Faculty_Management_System.png",
+    "description": "Developed a Faculty Management System with dynamic data retrieval and visualization for faculty research impact.",
+    "skills": ["Java", "OOPs"],
+    "source": "https://github.com/manikanta9275/Faculty-project"
+  },
+  {
+    "title": "Todo Management ",
+    "imageSrc": "projects/Todo_Management.png",
+    "description": "Developed a Django-based Todo Management app with user authentication, task management, and an intuitive interface.",
+    "skills": ["Django", "Python", "SQLite"],
+    "source": "https://github.com/manikanta9275/Django-todo"
+  }
+]

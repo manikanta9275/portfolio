@@ -1,0 +1,150 @@
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: 2;
+  width: 100%;
+  height: 70px;
+  background-color: #e5edf5;
+  color: #333;
+  box-sizing: border-box; 
+  border-bottom: 1px solid #754242; /* Add bottom border for line effect */
+ 
+}
+
+.navbarLine {
+  border: none;
+  border-top: 1px solid #110d0d; /* Border color */
+  margin: 0;
+}
+
+.title {
+  font-size: 30px;
+  margin-left: 40px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #333;
+}
+
+.title:hover {
+  color: #000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-left: auto;
+}
+
+.menuItems {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.menuItems a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-decoration: none;
+  color: #333;
+}
+
+.menuItems a:hover {
+  background-color: #85d4bd;
+  color: #000;
+}
+
+.menuItems a:active {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #ccc;
+}
+
+.menuBtn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+
+  .navbarLine {
+    margin: 10px 0;
+    color: #000;
+  }
+
+  .menu {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menuBtn {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: border 0.3s ease-in-out;
+    margin-left: 650px;
+    /* align-items: center; */
+    margin-top: -25px;
+    /* margin-right: 100px; */
+  }
+
+  .menuBtn:active {
+    border-width: 4px;
+  }
+
+  .menuItems {
+    display: none; /* Initially hidden, toggle visibility as needed */
+    flex-direction: column;
+    align-items: flex-end; /* Align items to the right */
+    gap: 10px;
+    border-radius: 10px;
+    background: #e6f5f7; /* Light blue background */
+    padding: 10px 20px;
+    width: auto; /* Use auto to fit content, or set a percentage if needed */
+    max-width: 170px; /* Adjust the maximum width as needed */
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    margin-left: 400px;
+  }
+  
+  .menuItems a {
+    text-align: center; /* Align text to the right */
+    padding: 8px 12px; /* Adjust padding for better spacing */
+    display: block; /* Ensure that links are block-level elements */
+    width: auto; /* Adjust width as needed */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Default color */
+  }
+  
+  .menuItems a:hover {
+    background-color: #85d4bd;
+    color: #000;
+  }
+  
+
+  .menuOpen {
+    display: inline-block;
+    width: 80%;
+  }
+}

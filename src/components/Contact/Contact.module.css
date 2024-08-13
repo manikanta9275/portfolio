@@ -1,0 +1,181 @@
+.container {
+  color: black;
+  background-color: rgb(225, 225, 246);
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 35px 10%;
+  gap: 20px;
+  align-items: flex-start;
+  flex-direction: column; /* Default for smaller screens */
+}
+.line {
+  box-shadow: black;
+  width: 100%;
+  border-top: 1px solid var(--color-text); /* Adjust the color and thickness of the line */
+}
+.innerContainer { /* New container for holding both formContainer and linksContainer */
+  display: flex;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.formContainer {
+  margin-left: 700px;
+  margin-top: -200px;
+  /* margin-bottom: 40px; */
+  flex-direction: column;
+  gap: 30px;
+  width: 500px;
+  background-color: rgb(150, 189, 223);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.formContainer h2 {
+  font-size: 24px;
+  font-weight: 500; 
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form label {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form input, .form textarea {
+  margin-top: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.form button {
+  margin-top: 20px;
+  background-color:  rgb(130, 220, 130);
+  color: black;
+  border-color: red;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.form button:hover {
+  background-color: rgb(237, 104, 104);
+  border-color:green;
+  color: white;
+}
+
+.linksContainer {
+  margin-right: 700px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(155, 204, 247);
+  border-radius: 10px;
+  margin-bottom: 100px;
+  margin-top: -300px; /* Spacing between form and links on smaller screens */
+}
+
+.links {
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.link img {
+  width: 40px;
+  height: 40px;
+  margin-left: -50px;
+}
+
+.link a {
+  font-size: 20px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.lets_chart h1 {
+  /* height: 200px; */
+  margin-left: 20px;
+  margin-top: 80px;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.lets_chart1 h3 {
+  margin-left: 20px;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: -40px;
+  width: 700px;
+}
+.lets_chart2 p {
+  margin-left: 20px;
+  margin-top: -60px;
+  font-size: 25px;
+}
+
+
+/* Media query for screens 768px and smaller */
+@media screen and (max-width: 768px) {
+  .innerContainer {
+    flex-direction: column; /* Stack children vertically */
+    gap: 20px; /* Space between formContainer and linksContainer */
+  }
+
+  .formContainer {
+    width: 500px; /* Full width of the parent container */
+    margin: 0; /* Remove any margin */
+    margin-bottom: 30px;
+  }
+  .form label{
+    /* gap: 5px; Space between form labels and inputs */
+    height: 80px;
+    margin-top: -10px;
+  }
+  .linksContainer {
+    width: 100%; /* Full width of the parent container */
+    margin: 0; /* Remove any margin */
+  }
+  .link{
+    /* margin-top: -15px; */
+    height: 18px;
+  }
+  .link img{
+    /* margin-top: -15px; */
+    height: 30px;
+    width: 30px;
+  }
+  .innerContainer {
+    display: flex;
+    justify-content: space-between; /* Arrange children horizontally */
+    gap: 20px; /* Space between formContainer and linksContainer */
+  }
+ 
+}
+
