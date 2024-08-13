@@ -142,7 +142,7 @@
 
 
 /* Media query for screens 768px and smaller */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .innerContainer {
     flex-direction: column; /* Stack children vertically */
     gap: 20px; /* Space between formContainer and linksContainer */
