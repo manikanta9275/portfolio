@@ -72,7 +72,7 @@
   display: none;
 }
 
-@media screen and (min-width: 372px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
