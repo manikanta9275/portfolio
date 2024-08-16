@@ -260,45 +260,70 @@
   }
 }
 
-/* Media query for small smartphones (up to 480px) */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
   .container {
     width: 100%;
+    padding: 10px; /* Adjust padding if needed */
   }
-.formContainer{
-  margin-top: 100px;
-  margin-right:200% ;
-  width: 80%;
-}
+
+  .innerContainer {
+    margin: 0; /* Remove margin to ensure alignment */
+    width: 85%; /* Full width for better stacking */
+    flex-direction: column; /* Ensure vertical stacking on small screens */
+    gap: 20px; /* Add gap between stacked items */
+  }
+
+  .formContainer {
+    margin-top: 20px; /* Adjust top margin to separate from other content */
+    width: 100%; /* Full width to utilize available space */
+  }
+
   .formContainer h2 {
-    font-size: 16px; /* Further adjust font size */
+    font-size: 14px; /* Adjust font size */
   }
 
   .form label {
-    font-size: 10px; /* Further adjust font size */
+    font-size: 10px; /* Adjust font size */
   }
 
   .form input,
   .form textarea {
-    font-size: 10px; /* Further adjust font size */
+    font-size: 10px; /* Adjust font size */
   }
 
   .form button {
-    font-size: 12px; /* Further adjust font size */
+    font-size: 12px; /* Adjust font size */
   }
 
   .link a {
-    font-size: 14px; /* Further adjust font size */
+    font-size: 14px; /* Adjust font size */
   }
 
   .link img {
-    width: 20px; /* Further adjust icon size */
+    width: 20px; /* Adjust icon size */
     height: 20px;
   }
-  .lets_chart{
-    font-size: larger;
+
+  .lets_chart h1{
+    font-size: 40px;
   }
-  .lets_chart1{
-    font-size: small;
+
+  .lets_chart1 h3{
+    font-size: 20px;
+  }
+  .lets_chart2 p{
+    font-size: 18px;
+  }
+  .linksContainer{
+    margin-left: 20px;
+    width: 90%;
+    /* height: 10px; */
+  }
+  .link a{
+    font-size: 18px;
+  }
+  .link img{
+    width: 30px;
+    height: 30px;
   }
 }
