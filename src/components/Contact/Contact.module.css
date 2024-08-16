@@ -1,45 +1,53 @@
+@import "../../vars.css";
+
+/* Container for the entire contact section */
 .container {
   color: black;
   background-color: rgb(225, 225, 246);
   display: flex;
-  justify-content: space-between;
-  width: 100vw;
+  flex-direction: column; /* Default layout for smaller screens */
   padding: 35px 10%;
-  gap: 20px;
+  /* gap: 20px; */
   align-items: flex-start;
-  flex-direction: column; /* Default for smaller screens */
+  width: 80%;
 }
+
+/* Divider line at the top */
 .line {
   box-shadow: black;
   width: 100%;
-  border-top: 1px solid var(--color-text); /* Adjust the color and thickness of the line */
-}
-.innerContainer { /* New container for holding both formContainer and linksContainer */
-  display: flex;
-  justify-content: space-between;
-  /* width: 100%; */
+  border-top: 1px solid var(--color-text);
 }
 
+/* Inner container to hold form and links */
+.innerContainer {
+  display: flex;
+  flex-direction: row; /* Row layout for larger screens */
+  gap: 20px; /* Space between formContainer and linksContainer */
+  width: 100%; /* Ensure it takes the full width */
+  margin-top: -8%;
+  margin-left: 55%;
+}
+
+/* Form container styles */
 .formContainer {
-  margin-left: 700px;
-  margin-top: -200px;
-  /* margin-bottom: 40px; */
-  flex-direction: column;
-  gap: 30px;
-  width: 500px;
   background-color: rgb(150, 189, 223);
   border-radius: 10px;
   padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  flex: 1; /* Allow it to take remaining space */
 }
 
+/* Form container heading styles */
 .formContainer h2 {
   font-size: 24px;
-  font-weight: 500; 
+  font-weight: 500;
   font-family: 'Roboto', sans-serif;
-  margin-top: 10px;
   text-align: center;
 }
 
+/* Form styles */
 .form label {
   font-weight: 400;
   display: flex;
@@ -47,9 +55,9 @@
   margin-bottom: 10px;
 }
 
-.form input, .form textarea {
+.form input,
+.form textarea {
   margin-top: 5px;
-  margin-left: 10px;
   padding: 10px;
   font-size: 16px;
   border-radius: 5px;
@@ -60,41 +68,41 @@
 }
 
 .form button {
-  margin-top: 20px;
-  background-color:  rgb(130, 220, 130);
+  background-color: rgb(130, 220, 130);
   color: black;
   border-color: red;
   padding: 10px;
   font-size: 18px;
   cursor: pointer;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   display: block;
+  margin: 20px auto 0;
 }
 
 .form button:hover {
   background-color: rgb(237, 104, 104);
-  border-color:green;
+  border-color: green;
   color: white;
 }
 
+/* Links container styles */
 .linksContainer {
-  margin-right: 700px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: rgb(155, 204, 247);
   border-radius: 10px;
-  margin-bottom: 100px;
-  margin-top: -300px; /* Spacing between form and links on smaller screens */
+  padding: 20px;
+  /* width: 8%; */
+  height: 200px;
+  max-width: 400px;
+  margin-left:-100% ;
+  margin-top: 10%;
+  flex: 1; /* Allow it to take remaining space */
 }
 
+/* Links list styles */
 .links {
+  display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: left;
   gap: 15px;
 }
 
@@ -102,13 +110,11 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 20px;
 }
 
 .link img {
   width: 40px;
   height: 40px;
-  margin-left: -50px;
 }
 
 .link a {
@@ -117,65 +123,182 @@
   text-decoration: none;
   font-weight: 400;
   letter-spacing: 1px;
+  padding: 10px; /* Add padding for a better hover effect */
+  border-radius: 8px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-.lets_chart h1 {
-  /* height: 200px; */
-  margin-left: 20px;
-  margin-top: 80px;
-  font-size: 35px;
-  font-family: 'Roboto', sans-serif;
+.link a:hover {
+  background-color: aliceblue;
+  color: #333; /* Optional: Change text color on hover */
+  padding: 8px; /* Slightly increase padding on hover */
+  border-radius: 10px; /* More rounded corners on hover */
+  transform: scale(1.05); /* Slightly enlarge the link */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.lets_chart1 h3 {
-  margin-left: 20px;
-  font-size: 40px;
-  font-family: 'Roboto', sans-serif;
-  margin-top: -40px;
-  width: 700px;
-}
+
+/* Heading styles */
+/* Heading and paragraph styles */
+/* Heading and paragraph styles */
+/* Heading and paragraph styles */
+.lets_chart1 h3,
 .lets_chart2 p {
-  margin-left: 20px;
-  margin-top: -60px;
-  font-size: 25px;
+  text-align: center;
+  font-family: 'Verdana', sans-serif; /* Alternative font for a clean look */
+  margin-bottom: -20px; /* Removed bottom margin */
 }
 
+/* Specific styles for .lets_chart h1 */
+.lets_chart h1 {
+  margin-bottom: -10px; /* Removed bottom margin */
+  font-size: 48px; /* Slightly adjusted font size */
+  font-weight: 900; /* Extra bold weight for strong emphasis */
+  font-family: 'Georgia', serif; /* Serif font for a classic look */
+  color: #2C3E50; /* Darker color for better contrast */
+}
 
-/* Media query for screens 768px and smaller */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/* Specific styles for .lets_chart1 h3 */
+.lets_chart1 h3 {
+  font-size: 28px; /* Slightly larger font size */
+  font-weight: 700; /* Bold weight for emphasis */
+  font-family: 'Helvetica Neue', sans-serif; /* Clean and modern font */
+  color: #34495E; /* Medium dark color for good contrast */
+}
+
+/* Specific styles for .lets_chart2 p */
+.lets_chart2 p {
+  font-size: 22px; /* Slightly larger font size */
+  font-weight: 300; /* Light weight for a softer appearance */
+  font-family: 'Times New Roman', serif; /* Classic serif font */
+  color: #5D6D7E; /* Softer, complementary color */
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+/* Media query for tablets and smaller laptops (up to 1024px) */
+@media screen and (max-width: 1024px) {
   .innerContainer {
-    flex-direction: column; /* Stack children vertically */
-    gap: 20px; /* Space between formContainer and linksContainer */
+    flex-direction: column; /* Stack formContainer and linksContainer vertically */
+    gap: 20px;
   }
 
-  .formContainer {
-    width: 500px; /* Full width of the parent container */
-    margin: 0; /* Remove any margin */
-    margin-bottom: 30px;
+  .formContainer,
+  .linksContainer {
+    width: 90%; /* Full width of the parent container */
+    max-width: none; /* Remove max-width constraint */
   }
-  .form label{
-    /* gap: 5px; Space between form labels and inputs */
-    height: 80px;
-    margin-top: -10px;
+
+  .formContainer h2 {
+    font-size: 20px; /* Adjust font size */
   }
+
+  .form label {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  .form button {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .link a {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .link img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+  }
+}
+
+/* Media query for large smartphones and smaller tablets (up to 728px) */
+@media screen and (max-width: 728px) {
+  .container {
+    margin-left: 0;
+    padding: 20px; /* Adjust padding for smaller screens */
+    width: 100%;
+  }
+
+  .innerContainer {
+    flex-direction: column; /* Stack formContainer and linksContainer vertically */
+  }
+
+  .formContainer,
   .linksContainer {
     width: 100%; /* Full width of the parent container */
-    margin: 0; /* Remove any margin */
+    margin-top: 20px; /* Adjust margin */
   }
-  .link{
-    /* margin-top: -15px; */
-    height: 18px;
+
+  .formContainer h2 {
+    font-size: 18px; /* Further adjust font size */
   }
-  .link img{
-    /* margin-top: -15px; */
-    height: 30px;
-    width: 30px;
+
+  .form label {
+    font-size: 12px; /* Further adjust font size */
   }
-  .innerContainer {
-    display: flex;
-    justify-content: space-between; /* Arrange children horizontally */
-    gap: 20px; /* Space between formContainer and linksContainer */
+
+  .form input,
+  .form textarea {
+    font-size: 12px; /* Further adjust font size */
   }
- 
+
+  .form button {
+    font-size: 14px; /* Further adjust font size */
+  }
+
+  .link a {
+    font-size: 16px; /* Further adjust font size */
+  }
+
+  .link img {
+    width: 25px; /* Further adjust icon size */
+    height: 25px;
+  }
 }
 
+/* Media query for small smartphones (up to 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+.formContainer{
+  margin-top: 100px;
+  margin-right:200% ;
+  width: 80%;
+}
+  .formContainer h2 {
+    font-size: 16px; /* Further adjust font size */
+  }
+
+  .form label {
+    font-size: 10px; /* Further adjust font size */
+  }
+
+  .form input,
+  .form textarea {
+    font-size: 10px; /* Further adjust font size */
+  }
+
+  .form button {
+    font-size: 12px; /* Further adjust font size */
+  }
+
+  .link a {
+    font-size: 14px; /* Further adjust font size */
+  }
+
+  .link img {
+    width: 20px; /* Further adjust icon size */
+    height: 20px;
+  }
+  .lets_chart{
+    font-size: larger;
+  }
+  .lets_chart1{
+    font-size: small;
+  }
+}

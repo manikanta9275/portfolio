@@ -17,12 +17,15 @@ body, html {
   /* margin-bottom: 200px; */
 }
 
-.des{
+.des {
   width: 80%;
   margin-left: 10%;
+  margin-right: auto; /* Center the description */
   color: black;
   font-size: 22px;
-  font-weight: 400; 
+  font-weight: 400;
+  text-align: left; /* Center align text */
+  margin-bottom: 20px; /* Add some space below the description */
 }
 
 .title {
@@ -31,14 +34,17 @@ body, html {
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  position: relative; /* Add this to position the pseudo-element */
-  margin-left: 140px;
+  position: relative;
+  margin-left: 7%;
+  margin-right: auto; /* Center the title */
   margin-top: 100px; /* Adjust this value for spacing between the line and title */
 }
 
 .line {
   width: 100%;
-  border-top: 1px solid var(--color-text); /* Adjust the color and thickness of the line */
+  border-top: 1px solid var(--color-text);
+  margin-left: auto;
+  margin-right: auto; /* Center the line */
 }
 
 .projects {
@@ -47,35 +53,63 @@ body, html {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  /* justify-content: center; */
   gap: 10px;
   width: 100%;
-  /* margin-left: 10%; */
   justify-content: center;
 }
 
 .projects > div {
   width: 300px; /* Fixed width for the project cards */
   height: 370px; /* Fixed height for the project cards */
-  justify-content: space-between; /* Ensure the content is spaced evenly */
-  background-color: #b6bde6; /* Optional: background color for better visual separation */
-  padding: 15px; /* Optional: padding inside the project cards */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better depth */
-  border-radius: 8px; /* Optional: rounded corners */
+  background-color: #b6bde6;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .projects > div {
-    flex: 1 1 calc(50% - 15px); /* Take up 50% of the width minus the gap */
-    width: 120px; /* Fixed width for the project cards */
-    height: 360px;
-    /* margin-bottom: 100px; */
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .des {
+    width: 90%; /* Adjust width for smaller screens */
+    font-size: 18px; /* Adjust font size */
   }
-  /* .gap{
-    height: 1000px;
-  } */
-  .title{
-    font-size: 30px;
-    margin-left: 50px;
+
+  .title {
+    font-size: 30px; /* Adjust font size */
+    margin-top: 80px; /* Adjust top margin */
+  }
+
+  .line {
+    width: 60%; /* Adjust width for smaller screens */
+  }
+
+  .projects > div {
+    width: 280px; /* Adjust width for smaller screens */
+    height: 350px; /* Adjust height */
+  }
+}
+
+@media (max-width: 480px) {
+  .des {
+    width: 85%; /* Adjust width for very small screens */
+    font-size: 16px; /* Adjust font size */
+    margin-bottom: 70px;
+
+  }
+
+  .title {
+    font-size: 25px; /* Adjust font size */
+    margin-top: 60px; /* Adjust top margin */
+  }
+
+  .line {
+    width: 100%; /* Adjust width for very small screens */
+  }
+
+  .projects > div {
+    width: 100%; /* Full width for project cards */
+    height: auto; /* Auto height */
+    margin-top: -15%;
+
   }
 }

@@ -1,4 +1,4 @@
-
+/* Base styles for the Navbar */
 .navbar {
   position: relative;
   display: flex;
@@ -12,9 +12,8 @@
   height: 70px;
   background-color: #e5edf5;
   color: #333;
-  box-sizing: border-box; 
-  border-bottom: 1px solid #754242; /* Add bottom border for line effect */
- 
+  box-sizing: border-box;
+  border-bottom: 1px solid #754242;
 }
 
 .navbarLine {
@@ -38,7 +37,7 @@
 .menu {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
   margin-left: auto;
 }
 
@@ -72,79 +71,80 @@
   display: none;
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/* Responsive styles */
+@media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 60px;
   }
 
   .title {
-    font-size: 25px;
-  }
-
-  .navbarLine {
-    margin: 10px 0;
-    color: #000;
+    font-size: 24px;
+    margin-left: 10px;
   }
 
   .menu {
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .menuBtn {
-    display: block;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    padding: 5px;
-    border: 2px solid #333;
-    border-radius: 5px;
-    transition: border 0.3s ease-in-out;
-    margin-left: 650px;
-    /* align-items: center; */
-    margin-top: -25px;
-    /* margin-right: 100px; */
-  }
-
-  .menuBtn:active {
-    border-width: 4px;
+    gap: 5px;
   }
 
   .menuItems {
-    display: none; /* Initially hidden, toggle visibility as needed */
+    display: none; /* Hide menu items by default */
     flex-direction: column;
-    align-items: flex-end; /* Align items to the right */
-    gap: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #e5edf5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
     border-radius: 10px;
-    background: #e6f5f7; /* Light blue background */
-    padding: 10px 20px;
-    width: auto; /* Use auto to fit content, or set a percentage if needed */
-    max-width: 170px; /* Adjust the maximum width as needed */
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-    margin-left: 400px;
   }
-  
-  .menuItems a {
-    text-align: center; /* Align text to the right */
-    padding: 8px 12px; /* Adjust padding for better spacing */
-    display: block; /* Ensure that links are block-level elements */
-    width: auto; /* Adjust width as needed */
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Default color */
-  }
-  
-  .menuItems a:hover {
-    background-color: #85d4bd;
-    color: #000;
-  }
-  
 
-  .menuOpen {
+  .menuItems.menuOpen {
+    display: flex; /* Show menu items when open */
+  }
+
+  .menuItems a {
+    padding: 10px 15px;
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .menuBtn {
     display: inline-block;
-    width: 80%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .title {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  .menuBtn {
+    width: 15px;
+    height: 15px;
+  }
+
+  .menuItems {
+    top: 50px;
+    padding: 8px;
+    width: 40%;
+  }
+
+  .menuItems a {
+    padding: 8px 10px;
+    margin: 3px 0;
+    font-size: 14px;
   }
 }

@@ -36,7 +36,7 @@ export const Contact = () => {
       <div className={styles.lets_chart}><h1> Let's chat....</h1></div>
         <div className={styles.lets_chart1}><h3>Tell me about your project</h3></div>
         <div className={styles.lets_chart2}><p> Let's create something together ✨</p></div>
-      <div className="innerContainer">
+      <div className={styles.innerContainer}>
         <div className={styles.formContainer}>
           <h2>Contact to us </h2>
           <form onSubmit={handleSubmit} className={styles.form}>
