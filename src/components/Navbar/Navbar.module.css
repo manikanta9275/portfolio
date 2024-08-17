@@ -72,11 +72,13 @@
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .navbar {
+    height: 100px;
     padding-left: 20px;
     padding-right: 20px;
-    height: 60px;
+    margin-top: 50px;
+    /* height: 60px; */
   }
 
   .title {
