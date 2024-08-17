@@ -243,8 +243,9 @@
   }
 
   .formContainer {
+    margin-left: 30px;
     margin-top: 20px; /* Adjust top margin to separate from other content */
-    width: 100%; /* Full width to utilize available space */
+    width: 80%; /* Full width to utilize available space */
   }
 
   .formContainer h2 {
@@ -284,8 +285,8 @@
     font-size: 18px;
   }
   .linksContainer{
-    margin-left: 20px;
-    width: 90%;
+    margin-left: 50px;
+    width: 70%;
     /* height: 10px; */
   }
   .link a{

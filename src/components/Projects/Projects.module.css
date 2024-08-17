@@ -96,7 +96,8 @@ body, html {
 
 @media (max-width: 480px) {
   .container{
-    margin-bottom: 150px;
+    /* margin-bottom: 150px; */
+    height: 2500px;
   }
   .gap{
     margin-bottom: 100px;
