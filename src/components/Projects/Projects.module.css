@@ -68,24 +68,32 @@ body, html {
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+
+  .container{
+    margin-bottom: -400px;
+  }
   .des {
-    width: 90%; /* Adjust width for smaller screens */
+    text-align: left;
+    margin-right: 200px;
+    width: 80%; /* Adjust width for smaller screens */
     font-size: 18px; /* Adjust font size */
   }
 
   .title {
     font-size: 30px; /* Adjust font size */
-    margin-top: 80px; /* Adjust top margin */
+    margin-top: 180px; /* Adjust top margin */
   }
 
   .line {
-    width: 60%; /* Adjust width for smaller screens */
+    width: 100%; /* Adjust width for smaller screens */
   }
 
-  .projects > div {
-    width: 280px; /* Adjust width for smaller screens */
+  .projects {
+    margin-left: 50px;
+    width: 80%; /* Adjust width for smaller screens */
     height: 350px; /* Adjust height */
+    margin-bottom: 100%;
   }
 }
 

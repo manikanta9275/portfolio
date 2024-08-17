@@ -178,13 +178,21 @@
 /* Media query for tablets and smaller laptops (up to 1024px) */
 @media screen and (max-width: 1024px) {
   .innerContainer {
-    flex-direction: column; /* Stack formContainer and linksContainer vertically */
+    flex-direction: column; 
     gap: 20px;
+    margin-top: 70px;
+    margin-left: 30px;
+  }
+
+  .linksContainer{
+    margin-left: 0;
+    margin-top: 0;
+    width: 80%;
   }
 
   .formContainer,
   .linksContainer {
-    width: 90%; /* Full width of the parent container */
+    width: 80%; /* Full width of the parent container */
     max-width: none; /* Remove max-width constraint */
   }
 
@@ -215,50 +223,6 @@
   }
 }
 
-/* Media query for large smartphones and smaller tablets (up to 728px) */
-@media screen and (max-width: 728px) {
-  .container {
-    margin-left: 0;
-    padding: 20px; /* Adjust padding for smaller screens */
-    width: 100%;
-  }
-
-  .innerContainer {
-    flex-direction: column; /* Stack formContainer and linksContainer vertically */
-  }
-
-  .formContainer,
-  .linksContainer {
-    width: 100%; /* Full width of the parent container */
-    margin-top: 20px; /* Adjust margin */
-  }
-
-  .formContainer h2 {
-    font-size: 18px; /* Further adjust font size */
-  }
-
-  .form label {
-    font-size: 12px; /* Further adjust font size */
-  }
-
-  .form input,
-  .form textarea {
-    font-size: 12px; /* Further adjust font size */
-  }
-
-  .form button {
-    font-size: 14px; /* Further adjust font size */
-  }
-
-  .link a {
-    font-size: 16px; /* Further adjust font size */
-  }
-
-  .link img {
-    width: 25px; /* Further adjust icon size */
-    height: 25px;
-  }
-}
 
 @media (max-width: 480px) {
   .container {
