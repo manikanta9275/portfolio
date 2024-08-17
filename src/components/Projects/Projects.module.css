@@ -70,17 +70,16 @@ body, html {
 /* Responsive Styles */
 @media (max-width: 1024px) {
 
-  
   .des {
     text-align: left;
-    margin-right: 200px;
-    width: 80%; /* Adjust width for smaller screens */
+    margin-right: 20px;
+    width: 90%; /* Adjust width for smaller screens */
     font-size: 18px; /* Adjust font size */
   }
 
   .title {
     font-size: 30px; /* Adjust font size */
-    margin-top: 180px; /* Adjust top margin */
+    margin-top: 80px; /* Adjust top margin */
   }
 
   .line {
