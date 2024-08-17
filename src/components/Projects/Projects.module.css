@@ -112,10 +112,13 @@ body, html {
     width: 100%; /* Adjust width for very small screens */
   }
 
+  .projects{
+    height: auto;
+  }
   .projects > div {
     width: 100%; /* Full width for project cards */
     height: auto; /* Auto height */
-    margin-top: -15%;
+    /* margin-top: -15%; */
 
   }
 }
