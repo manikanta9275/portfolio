@@ -123,10 +123,10 @@
 
 @media (max-width: 480px) {
   .navbar {
+    margin-top: 0px;
     height: 80px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 50px;
   }
 
   .title {
