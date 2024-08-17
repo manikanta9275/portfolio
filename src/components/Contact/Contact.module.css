@@ -177,6 +177,9 @@
 
 /* Media query for tablets and smaller laptops (up to 1024px) */
 @media screen and (max-width: 1024px) {
+  .container{
+    margin-top: 200px;
+  }
   .innerContainer {
     flex-direction: column; 
     gap: 20px;
