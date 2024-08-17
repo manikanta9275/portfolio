@@ -88,14 +88,19 @@ body, html {
   }
 
   .projects {
-    margin-left: 50px;
+    margin-left: 100px;
     width: 80%; /* Adjust width for smaller screens */
     height: 350px; /* Adjust height */
-    margin-bottom: 100%;
   }
 }
 
 @media (max-width: 480px) {
+  .container{
+    margin-bottom: 150px;
+  }
+  .gap{
+    margin-bottom: 100px;
+  }
   .des {
     width: 85%; /* Adjust width for very small screens */
     font-size: 16px; /* Adjust font size */
@@ -111,14 +116,15 @@ body, html {
   .line {
     width: 100%; /* Adjust width for very small screens */
   }
-
-  .projects{
-    height: auto;
+  .projects {
+    margin-top: 100px;
+    padding-bottom: 100px;
   }
   .projects > div {
+    margin-top: -75px;
     width: 100%; /* Full width for project cards */
     height: auto; /* Auto height */
-    /* margin-top: -15%; */
+    margin-bottom: 100px;
 
   }
 }
