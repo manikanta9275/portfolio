@@ -70,9 +70,7 @@ body, html {
 /* Responsive Styles */
 @media (max-width: 1024px) {
 
-  .container{
-    margin-bottom: -400px;
-  }
+  
   .des {
     text-align: left;
     margin-right: 200px;
