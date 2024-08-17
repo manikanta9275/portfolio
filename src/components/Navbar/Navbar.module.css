@@ -72,17 +72,10 @@
 }
 
 /* Responsive styles */
-@media (max-width: 1024px) {
-  .navbar{
-    height: 150px;
-    padding-top: 70px;
-  }
-}
 @media (max-width: 768px) {
   .navbar {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 100px;
     height: 60px;
   }
 
