@@ -94,13 +94,16 @@
   .container{
     margin-bottom: -30%;
     width: 100%;
+    /* margin-left: -10px; */
   }
   .title {
     font-size: 24px; /* Further adjust title font size for very small screens */
   }
 
   .skill {
-    width: 50px; /* Further adjust width for very small screens */
+    margin-right:50px ;
+    margin-left: 0px;
+    width: 10%; /* Further adjust width for very small screens */
   }
 
   .skillImageContainer {

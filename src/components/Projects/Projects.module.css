@@ -103,10 +103,11 @@ body, html {
     margin-bottom: 100px;
   }
   .des {
-    width: 85%; /* Adjust width for very small screens */
+    /* margin-right: 100px; */
+    width: 75%; /* Adjust width for very small screens */
     font-size: 16px; /* Adjust font size */
     margin-bottom: 70px;
-
+    margin-left: 40px;
   }
 
   .title {
@@ -120,6 +121,7 @@ body, html {
   .projects {
     margin-top: 100px;
     padding-bottom: 250px;
+    margin-left: 80px;
   }
   .projects > div {
     margin-top: -75px;
