@@ -203,6 +203,12 @@
 }
 
 /* Media Queries for Smaller Screens */
+@media (max-width: 1024px) {
+  .container{
+    margin-right: -100px;
+    width: 1000px;
+  }
+}
 @media (max-width: 728px) {
   .container {
     flex-direction: column; /* Stack content and image vertically */

@@ -67,7 +67,9 @@
 
 /* Media Queries for Responsive Design */
 @media (max-width: 1024px) {
-  
+  .content{
+    height: 350px;
+  }
   .title {
     font-size: 30px; /* Adjust title font size for smaller screens */
   }

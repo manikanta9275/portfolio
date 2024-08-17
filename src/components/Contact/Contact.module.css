@@ -182,9 +182,15 @@
     gap: 20px;
   }
 
-  .formContainer,
+  .formContainer{
+    margin-top: 100px;
+    margin-left: -300px;
+  }
   .linksContainer {
-    width: 90%; /* Full width of the parent container */
+    margin-top: 10px;
+    margin-left: -240px;
+    /* margin-right: 500px; */
+    width: 50%; /* Full width of the parent container */
     max-width: none; /* Remove max-width constraint */
   }
 
