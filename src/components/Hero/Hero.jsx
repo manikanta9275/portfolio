@@ -19,8 +19,7 @@ export const Hero = () => {
         </div>
       
       
-      <div className={styles.back_box}>
-        {/* Random dots */}
+      {/* <div className={styles.back_box}>
         <div className={`${styles.dot} ${styles.dot1}`}></div>
         <div className={`${styles.dot} ${styles.dot2}`}></div>
         <div className={`${styles.dot} ${styles.dot3}`}></div>
@@ -34,9 +33,9 @@ export const Hero = () => {
         <div className={`${styles.dot} ${styles.dot11}`}></div>
         <div className={`${styles.dot} ${styles.dot12}`}></div>
         <div className={`${styles.dot} ${styles.dot13}`}></div>
-      </div>
+      </div> */}
         <img
-          src={getImageUrl("hero/WhatsApp_Image_2024-08-13_at_21.15.40_0f04de32-removebg-preview.png")}
+          src={getImageUrl("hero/Picsart_24-08-27_15-48-16-205.png")}
           alt="Hero image of me"
           className={styles.heroImg}
         />

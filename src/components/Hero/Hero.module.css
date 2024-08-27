@@ -8,7 +8,7 @@
   width: 100%; /* Changed to 100% to avoid horizontal scrolling issues */
   height: 650px;
   overflow: hidden; 
-  background-color: #c6e1e9;
+  background-color: #c8e0e6;
   padding-top: 70px; /* Adjust this based on your navbar height to avoid overlap */
   box-sizing: border-box; /* Ensure padding is included in width/height */
 }
@@ -48,7 +48,10 @@
 
 .description2 {
   margin-top: -50px;
+  font-weight: 400; /* Makes the text bold */
+  font-size: 1.2em;  /* Adjusts the text size; you can change this value as needed */
 }
+
 
 .buttonContainer {
   display: flex; 
@@ -95,85 +98,71 @@
   right: 18%; /* Adjust position for better alignment */
 }
 
-.dot {
-  position: absolute;
-  border-radius: 50%;
-  background-color: #4fb5e5;
-  opacity: 0.8;
+/* OTP Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
 }
 
-.dot1 {
-  width: 15px;
-  height: 15px;
-  top: 20px;
-  left: 10%;
+.modalContent {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
 }
 
-.dot3 {
-  width: 8px;
-  height: 8px;
-  top: 80%;
-  left: 20%;
+.modalContent h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
-.dot5 {
-  width: 9px;
-  height: 7px;
-  top: 2%;
-  left: 90%;
+.modalContent input {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-.dot6 {
-  width: 10px;
-  height: 10px;
-  top: 30%;
-  left: 90%;
+.modalContent button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  cursor: pointer;
 }
 
-.dot8 {
-  width: 9px;
-  height: 9px;
-  top: 80%;
-  left: 10%;
+.modalContent button:hover {
+  background-color: #0056b3;
 }
 
-.dot10 {
-  width: 6px;
-  height: 6px;
-  top: 35%;
-  left: 10%;
-}
-
-.dot11 {
-  width: 13px;
-  height: 13px;
-  top: 5%;
-  left: 35%;
-}
-
-.dot12 {
-  width: 8px;
-  height: 8px;
-  top: 25%;
-  left: 15%;
-}
-
-.dot13 {
-  width: 8px;
-  height: 8px;
-  top: 50%;
-  left: 5%;
+.modalContent button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
 }
 
 .heroImg {
   position: absolute;
-  top: 145px;
-  right: 17.5%; /* Move image to the right side */
-  height: 50%; /* Maintain aspect ratio */
-  width: auto; /* Adjust to maintain aspect ratio */
+  top: 80px;
+  right: 9%; /* Move image to the right side */
+  height: 80%; /* Maintain aspect ratio */
+  width:auto; /* Adjust to maintain aspect ratio */
   z-index: 1;
-  border: 2px solid #81acca;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+  /* border: 2px solid #81acca;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); Add shadow */
 }
 
 .topBlur {
@@ -203,7 +192,68 @@
 }
 
 /* Media Queries for Smaller Screens */
-@media (max-width: 728px) {
+@media (max-width: 1024px) and (min-width: 728px) {
+  .container {
+    height: 700px;
+    flex-direction: column; /* Stack content and image vertically */
+    padding-top: 200px; /* Adjust padding for navbar */
+  }
+
+  .content {
+    width: 100%; /* Take full width */
+    text-align: left; /* Center text */
+  }
+
+  .hello {
+    /* margin-top: 50px; */
+    font-size:30px;
+    /* margin-left: -60%; */
+    margin-bottom: -2%;
+  }
+
+  .name {
+    font-size: 40px;
+    /* margin-left: -20%; */
+  }
+
+  .description1, .description2 {
+    /* margin-left: 25px; */
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .description2{
+    font-size: 20px;
+    width: 80%;
+    /* margin-left: 25px; */
+  }
+
+  .heroImg {
+    width: 50%; /* Full width for smaller screens */
+    height: 60%; /* Adjust height */
+    right: 0px; /* Align image to the right side */
+    top: 0px; /* Reset top position */
+  }
+
+  .buttonContainer{
+    flex-direction: row;
+    height: 50px;
+  }
+  .contactBtn{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 5px;
+    display: inline-block;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 728px) and (min-width: 480px) {
   .container {
     flex-direction: column; /* Stack content and image vertically */
     padding-top: 200px; /* Adjust padding for navbar */
@@ -238,19 +288,12 @@
   }
 
   .heroImg {
-    width: 25%; /* Full width for smaller screens */
-    height: 40%; /* Adjust height */
-    right: 30px; /* Align image to the right side */
-    top: 155px; /* Reset top position */
+    width: 50%; /* Full width for smaller screens */
+    height: 60%; /* Adjust height */
+    right: 0px; /* Align image to the right side */
+    top: 20px; /* Reset top position */
   }
 
-  .back_box {
-    width: 200px;
-    height: 200px;
-    top: 210px; /* Reset top position */
-    margin-right: -13%;
-    border: 7px solid #4fb5e5;
-  }
   .buttonContainer{
     flex-direction: row;
   }
@@ -271,13 +314,15 @@
 @media (max-width: 480px)  {
   .container {
     flex-direction: column; /* Stack content and image vertically */
-    padding-top: 100px; /* Adjust padding for navbar */
+    padding-top: 80px; /* Adjust padding for navbar */
+    /* margin-bottom: 50px; */
   }
 
   .content {
     margin-top: 100px;
     width: 100%; /* Take full width */
     text-align: left; /* Center text */
+    /* margin-bottom: -100px; */
   }
 
   .hello {
@@ -304,33 +349,26 @@
   }
 
   .heroImg {
-    width: 27%; /* Full width for smaller screens */
-    height: 28%; /* Adjust height */
-    right: 100px; /* Align image to the right side */
-    top: 90px; /* Reset top position */
+    margin-top: -60px;
+    width: 50%; /* Full width for smaller screens */
+    height: 40%; /* Adjust height */
+    right: 60px; /* Align image to the right side */
   }
 
-  .back_box {
-    width: 120px;
-    height: 120px;
-    right: 200px;
-    /* margin-right: 1px; */
-    top: 150px; /* Reset top position */
-    border: 4px solid #4fb5e5;
-  }
+
   .buttonContainer{
     flex-direction: row;
   }
   .contactBtn{
     color: white;
     border: none;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
     font-size: 12px;
     margin: 5px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 }
