@@ -218,12 +218,11 @@
 
   .description1, .description2 {
     /* margin-left: 25px; */
-    font-size: 20px;
+    font-size: 25px;
     width: 50%;
   }
 
   .description2{
-    font-size: 20px;
     width: 80%;
     /* margin-left: 25px; */
   }
@@ -246,7 +245,7 @@
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 20px;
     margin: 5px;
     display: inline-block;
     margin-bottom: 30px;
