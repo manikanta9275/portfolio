@@ -229,7 +229,7 @@
   }
 
   .heroImg {
-    width: 50%; /* Full width for smaller screens */
+    width: 45%; /* Full width for smaller screens */
     height: 60%; /* Adjust height */
     right: 0px; /* Align image to the right side */
     top: 0px; /* Reset top position */
