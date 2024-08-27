@@ -72,7 +72,7 @@
 }
 
 /* Responsive styles */
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 480px) {
   .navbar {
     height: 130px;
     padding-left: 20px;
@@ -124,7 +124,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width:480px)  {
   .navbar {
     /* height: 100px; */
     /* padding-left: 30px; */
